@@ -1,0 +1,10 @@
+#É colocado no arquivo bootstrap para que seja buscado antes da inicialização da aplicação (padrão do java)
+
+spring: 
+   application:
+      name: 'cadastros'
+   profiles:
+      active: default # pode mudar para dev ou prod, o default é fornecedor.yml o dev é fornecedor-dev.yml
+   cloud:
+      config:
+         uri: http://localhost:8888
